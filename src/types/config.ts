@@ -171,6 +171,7 @@ export interface NitroOptions extends PresetOptions {
     hostname?: string;
     watch?: string[];
     runner?: RunnerName;
+    miniflareOptions?: Record<string, unknown>;
   };
   watchOptions: ChokidarOptions;
   devProxy: Record<string, string | ProxyServerOptions>;

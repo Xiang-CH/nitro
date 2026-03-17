@@ -95,6 +95,7 @@ const cloudflarePagesStatic = defineNitroPreset(
 export const cloudflareDev = defineNitroPreset(
   {
     extends: "nitro-dev",
+    devServer: { runner: "miniflare" },
     modules: [cloudflareDevModule],
   },
   {
